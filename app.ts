@@ -60,7 +60,7 @@ app.post('/accesstoken', async (req: Request, res: Response) => {
 
     console.log(response.data);
 
-    res.status(200).json({ message: "successfull", data: response.data })
+    res.status(200).json({ message: "successfull", data: response.data, deviceId })
 
 });
 

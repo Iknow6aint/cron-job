@@ -61,6 +61,7 @@ app.post('/accesstoken', (req, res) => __awaiter(void 0, void 0, void 0, functio
     // Implement your logic based on the device action
     // You can access the received headers using res.locals.headers
     console.log(response.data);
+    res.status(200).json({ message: "successfull", data: response.data, deviceId });
 }));
 // Define a wrapper function for the cron job
 let refreshParams = null;
